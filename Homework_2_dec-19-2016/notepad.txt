@@ -1,0 +1,39 @@
+
+How to clone a remote repository using commandline?
+
+By using the below command we can clone a repo
+ git clone https://github.com/karthikkrishna611/UIClassDecember-18-2016 
+
+How to Create your own Repository in GitHub Using SourceTree?
+
+Step1: you have to clone the link of your repo from GitHub account. 
+we can clone a repository by clicking ("clone or download") in your github account their you can see a url and copy it.
+step2:open the source tree app and click clone url and copy the link and create a directory.click ok.
+step3:open sublime text,and open the destinatiom directory and if you want to add something or edit something do it and save.
+step4:Goto sourcetree app and stage all the files in the directory.
+step5:push the commited file to the remote repo by entering your email id and password.
+step5:commit the staged file.
+step6:goto your github account their you can see all your commited files .
+
+How to Create your own Repository in GitHub Using CommandLine?
+
+1.I Created a new Repository in GitHub and didn’t check Readme.md (because I want to create the file from command line).
+2.I created a new Directory  
+  using command (mkdir) in command line
+3.I went to the created directory using command 
+  cd New Directory name
+4.Now, I created a file in my directory using command
+   echo "# UI_HomeWork" >> README.md 
+5.Now I created a new repository using command
+  git init
+6.I added the created file into my repository using command
+ git add README.md
+7.Now I checked the status of my git using command
+ git status
+8.Now I commit my added file using command 
+ git commit -m "some message which is appropriate to your work”
+9.Now I am creating an alias to my remote repository to push my file using command
+ git remote add origin https://github.com/divyaobulapu/UI_HomeWork.git 
+10.I pushed my own repository to GitHub using command
+git push -u origin master (here origin explains which url to push to GitHub)
+
