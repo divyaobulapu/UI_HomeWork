@@ -1,0 +1,59 @@
+
+What is VERSION CONTROL Tool?
+
+Every project has many developers to work on, and some of them should be working on same files which evolves in little steps, like
+creating things, save things, adding things, edit things and save the things again and it can be modified later.
+ Now, how can we keep track of the changes happened and how can we know who made the changes why did they made that changes?
+That Job is done by Version Control
+Version control systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the source code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
+
+Advantages of version control?
+--save versions properly
+--understand what happened
+--restore previous versions
+--collaborate without overwriting
+--back up
+--independent of operating systems
+--independent of tools (IDE, editors, etc.,)
+--independent of language/framework.
+While it is possible to develop software without using any Version control, doing so subjects the project to a huge risk like not having backups, and no log History,
+that no professional team would be advised to accept. So the question is not whether to use version control but which version control system to use.
+There are many choices, but here we are going to focus on just one, Git
+
+What is GIT?
+
+Git is a tool of version control systems.
+It is primarily used for software development.
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+Git is used to coordinate work among multiple people.
+
+
+
+What is Repository and Why do we need to use repository?
+
+Repository is a central location in which data is stored and managed. 
+A repository can be a place where multiple databases or files are located for distribution over a network, or a repository can be a location that is directly accessible to the user without having to travel across a network.
+A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs. We recommend including a README, or a file with information about your project. 
+
+What is GitHub?
+GitHub is a code hosting platform for version control (git). It lets you and others work together on projects from anywhere. It offers all of the distributed version control and source code management (SCM) functionality of Git, as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management for every project. 
+GitHub offers both plans for private repositories, and free accounts which are commonly used to host open-source software projects. GitHub is the largest host of source code in the world.
+Difference between Git and GitHub
+
+Git is a revision control system, a tool to manage your source code history. GitHub is a hosting service for Git repositories. So they are not the same thing: Git the tool of version control systems , GitHub the service for projects that use Git. To get your code to GitHub.
+
+Github allows you to:
+•	Share your repositories with others.
+•	Access other user's repositories.
+•	Store remote copies of your repositories (github servers) as backup of your local copies.
+What is pull, push, commit in git?
+git commit:
+ commits the files that have been added and creates a new revision with a log. If you do not add any files, git will not commit anything. You can combine both actions with git commit –a.
+git pull:
+ fetch and merge any commits from the tracking remote branch.
+git push: sends all the pending changes to the remote repository to which your branch is mapped.
+
+What are Merge conflicts?
+
+For example let’s assume like two persons has to work  on same file and the code has two if conditions named ‘a’ and ‘b’, both of them clone the file from the repository and the second person worked on condition ‘a’ he made some changes and commit that file and pushed to repository before first person , and the first person also did some changes on condition ‘b’ and he is trying to push it to the repository, he wont be able to push the code successfully their occurs the merge conflict because the source code is already updated, now the first person has to clone the updated code and has to make the changes to that code and he have to push that code to the repo.
+
