@@ -1,0 +1,62 @@
+1.How to resolve merge conflicts?
+  When working together,the situation can arise where changes have been made to the same file by different people.
+  You can resolve merge conflicts manually by opening the conflicted files in any editor.  The conflicts have been marked up like this:
+<<<<<<< HEAD
+// code from base branch
+=======
+// code from merged branch
+>>>>>>> branch1
+You can then manually edit the code to contain one or the other or a synthesis of both changes and remove the markups.  Then stage and commit to complete the merge. 
+
+2) what is html? how to create a html document?
+
+
+HTML:Hyper Text Markup Language.
+HTML describes the structure of Web pages using markup.
+ HTML IS USED  to format text as titles and headings, to arrange graphics on a webpage, to link to different pages within a website, and to link to different websites.
+
+ HTML works in a very simple, very logical, format. It reads like we do, from top to bottom, and left to right. 
+
+we create HTML document as shown below using some tags.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+  
+  Some Message
+
+</body>
+</html>
+
+3)what is doctype?
+
+The <!DOCTYPE> declaration must be the very first thing in your HTML document, before the <html> tag.
+The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+In HTML5 <!DOCTYPE> declarations is only one:
+<!DOCTYPE html>
+
+4) what is an tag and element in html?
+
+HTML is a structured hierarchical language that requires you to follow its rules if you wish your documents to appear correctly. For example, certain elements and tags are required to fit within other elements and tags and will not work unless they are properly placed.
+
+HTML tags are the hidden keywords within a web page that define how the browser must format and display the content. Most tags must have two parts, an opening and a closing part. For example, <html> is the opening tag and </html> is the closing tag.
+
+Tags specifies how the document, or a portion of the document, should be formatted. Tags are used by all format specifications that store documents as text files. 
+ Tags must have two parts, an opening and a closing part.
+
+Element:
+
+An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+Example:
+<tagname>Content goes here...</tagname>
+The HTML element is everything from the start tag to the end tag:
+
+<p>My first paragraph.</p>
+
+5) what is an attribute in html?
+
+Attributes provide additional information about HTML elements.
+Attributes allow you to customise a tag, and are defined within the opening tag,such as such as <img src="">
+Attributes are often assigned a value using the equals sign.
