@@ -1,0 +1,154 @@
+1) how to create a list in html? orderlists and unorderlists
+
+In html List can be  created using 'li' tag <li></li>
+Inside  this tag we can list the items,as shown below
+<li>Pizza</li>
+<li>choclate</li>
+<Li>Ice cream</li>
+
+We can create Two Types of Lists in HTML.They are
+
+1.Ordered List:
+***************
+By using Ordered list we can see the listed items in number format. like,
+1.pizza
+2.Choclate
+3.Ice cream
+
+The tag used to create Ordered list is <ol></ol>
+In between this <ol></ol> we have to list out the items as shown below
+<ol>
+<li>Pizza</li>
+<li>Choclate</li>
+<li>Ice Cream</li>
+</ol>
+
+2.Unordered List:
+*****************
+Where as in unordered list we can see the list of items in the form of bullets,as shown
+.pizza
+.choclate
+.Ice cream
+
+The tag used to create Ordered list is <ul></ul>
+In between this <ul></ul> we have to list out the items as shown below
+<ul>
+<li>Pizza</li>
+<li>Choclate</li>
+<li>Ice Cream</li>
+</ul>
+
+2) how to include images in html?
+"img" tag is used to insert an image into web page.
+<img src=""/>
+IMG stands for "image." It announces to the browser that an image will go here on the page. Yes, the image will pop up right where you write in the image tag.
+
+SRC stands for "source."It's telling the browser where to go to find the image. 
+
+First we need to get an image to put in our web page.
+Goto google save an image in your folder.
+Now,open the notepad where you are writing your Html code
+and insert an "image" tag as shown below.
+
+<img src=”folder where image is saved eg:images/man.jpg"/>
+
+We can insert an image taking url directly from the browser as shown below
+
+<img src=”URL of image” />
+
+ 3) how to take user input in html? 
+
+In HTML we can give inputs using "input" tag,as shown below
+<input type="text"/> 
+
+4) how to have links to different web pages and link to differnt part of same webpage?
+
+-HTML links are hyperlinks.
+-You can click on a link and jump to another document.
+-A link does not have to be text. It can be an image or any other HTML element.
+-In HTML, links are defined with the <a> tag.As shown below
+<a href="url">link text</a>
+The href attribute specifies the destination address.
+The link text is the visible part 
+example:
+********
+<a href="www.google.com">google</a>
+
+ 5) what is head, body, html element and why do we need them in the page?
+
+ Head tag:
+ **********
+ Header tag is something which holds the information about the document.
+ A title element is required within the head element. meta, style, base, link, and script can also be used.
+ Head tag should be the first element inside an html element.
+ You can have several <header> elements in one document.
+ It should start immediately after the opening html tag and end directly before the opening body tag.As shown below
+ example:
+ ********
+ <html>
+ <head>
+ <title>Page Title</title>
+ </head>
+ <body>
+ </body>
+ </html>
+
+ Body tag:
+ *********
+ The HTML <body> tag defines the main content of the HTML document or the section of the HTML document that will be directly visible on your web page. This tag is also commonly referred to as the <body> element.
+ Syntax:
+ ******
+In HTML, the syntax for the <body> tag is:
+<body>  </body>
+The HTML <body> element is found within the <html> tag.
+The most common elements to be placed in the HTML <body> tag are: <h1>, <p>, <div>, <table> etc., tags.
+
+Element:
+*********
+Html revolves around elements
+ An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+Example:
+<tagname>Content goes here...</tagname>
+The HTML element is everything from the start tag to the end tag.
+example:<p>this is a paragraph tag</p>
+The <p> element defines a paragraph.
+It has a start tag <p> and an end tag </p>.
+The element content is: this is a paragraph tag.
+
+
+ 6) what are semantic element, descibe about each one of them?
+ Semantics is the study of the meanings of words and phrases in a language.
+Semantic elements = elements with a meaning.
+  Semantic Elements:
+  ********************
+  A semantic element clearly describes its meaning to both the browser and the developer.
+  Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table> - Clearly defines its content.
+
+List of Semantic Elements and their definition:
+
+<article>---Defines an article
+<aside>	----Defines content aside from the page content
+<details>---Defines additional details that the user can view or hide
+<figcaption>-Defines a caption for a <figure> element
+<figure>---Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer>----Defines a footer for a document or section
+<header>----Specifies a header for a document or section
+<main>------Specifies the main content of a document
+<mark>-----	Defines marked/highlighted text
+<nav>------Defines navigation links
+example:
+<nav>
+  <a href="/html/">HTML</a> 
+  <a href="/css/">CSS</a> 
+  <a href="/js/">JavaScript</a> 
+  <a href="/jquery/">jQuery</a>
+</nav>
+<section>--	Defines a section in a document
+<summary>---Defines a visible heading for a <details> element
+<time>----	Defines a date/time
+<p>We open at <time>10:00</time> every morning.</p>
+
+
+
+
