@@ -1,0 +1,152 @@
+ 1) bootstrap buttons? 
+The Bootstrap button CSS provides the quick and easy way to create and customize the buttons.They are used for various purposes like, submit or reset an HTML form, performing interactive actions such as showing or hiding something on a web page on click of the button, etc.
+
+Bootstrap Button Styles
+*************************
+Different classes are available in Bootstrap for styling the buttons as well as to indicate the different states. Button styles can be applied to any element. However, it is applied normally to the <a>, <input>, and <button> elements for the best rendering.
+
+Different types of buttons available in Bootstrap
+***************************************************
+Default:Default gray button with gradient.
+
+Primary:Provides extra visual weight to indicate primary action button in a set of buttons.
+
+Info:Can be used as an alternative to the default button.
+
+Success:Indicates a successful or positive action.
+
+Warning:Indicates caution should be taken with this action.
+
+Dnger:Indicates a dangerous or potentially negative action.
+
+Link:Deemphasize a button by making it look like a link while maintaining button behavior.
+
+This is how to create a button using "button" tag:
+**************************************************
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+
+This is how to create a button using "a" tag:
+************************************************
+<a href="" class="btn">Default</a> 
+<a href="" class="btn btn-primary">primary</a>
+<a href="" class="btn btn-info">info"</a>
+<a href="" class="btn btn-success">success</a>
+<a href="" class="btn btn-warning">warning</a>
+<a href="#" class="btn btn-danger">Danger</a>
+<a href="#" class="btn btn-link">Link</a>
+
+This is how to create a button using "Input" tag:
+***********************************************
+
+ <input type="button" class="btn btn-default" value="Default">
+ <input type="button" class="btn btn-primary" value="Primary">
+ <input type="button" class="btn btn-info" value="Info">
+ <input type="button" class="btn btn-success" value="Success">
+ <input type="button" class="btn btn-warning" value="Warning">
+ <input type="button" class="btn btn-danger" value="Danger">
+ <input type="button" class="btn btn-link" value="Link">
+
+--By default in Bootstrap buttons are created in Medium size.
+--We can decide the size of the button 
+like large(lg),small(sm),medium(md),extra-small(xs)
+Example:
+<a href="#" class="btn btn-link btn-lg">Link</a>
+<a href="#" class="btn btn-link btn-sm">Link</a>
+<a href="#" class="btn btn-link btn-xs">Link</a>
+<a href="#" class="btn btn-link btn-md">Link</a>
+
+--We can create a button which can take the size of the whole container means all the 12 columns using "Block" class
+example:
+<a href="#" class="btn btn-link btn-lg btn-block">Link</a>
+
+
+2) bootstrap Form inputs and input-sizing? 
+Bootstrap supports all the html input types like
+Text,password,date,month,time,number,email,url etc.,
+This is how we write the forms in Bootstrap
+<h1>Basic Forms</h1>
+<form>
+<div class="form-group">
+<label for="email">Email Address</label> 
+//for in the label highlights the input box
+<input type="email" class="form-control" id="email"/>
+<label for="password">Password</label> 
+<input type="password" class="form-control" id="password"/>
+<label for="file">Upload file</label> 
+<input type="file" class="form-control" id="file"/>
+</div>
+<div class="form-group">
+<select class="form-control" id="sell"
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</div>
+</form>
+
+3) bootstrap glyphicons?
+Glyphicons are icon fonts which you can use in your web projects.They are approximately 260 glyphicons available in bootstrap.Glyphicons can be used in text, buttons, toolbars, navigation, forms, etc.
+we can find all the glymphicons in this link:
+http://getbootstrap.com/components/
+
+Glyphicon Syntax:
+
+<span class="glyphicon glyphicon-name"></span>
+
+example:
+<span class = "glyphicon glyphicon-search"></span>
+
+we can also add this glymphicons inside a button as shown below
+  <button type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </button>
+
+We can also do some styling  to this buttons as well.
+
+4) bootstrap, images, wells, jumbotron, panel, alerts, badges, labels, lists, pagination, pills , tabs, ...
+
+
+Jumbotron:
+***********
+The Bootstrap jumbotron component provides an excellent way to showcase the key content or information on a web page. Just wrap your featured content like heading, descriptions etc. in a <div> element and apply the class .jumbotron on it.
+example:
+<div class="jumbotron">
+<p>This is about how to use Jumbotron in bootstrap.</p>
+</div>
+
+Well:
+*****
+By using this well we can see the data sunken effect.
+It can be used as follows
+
+<div class = "well">
+<button type="button" class="btn btn-default"> This button is in well </button>
+</div>
+
+we can do sizing of the well as required size .
+You can change the size of well using the optional classes such as, well-lg or well-lg. These classes are used in conjunction with .well class. These affect the padding, making the well larger or smaller depending on the class.
+
+<div class = "well well-lg">Hi, am in large well !!</div>
+<div class = "well well-sm">Hi, am in small well !!</div>
+
+
+Panels:
+********
+Sometimes you might require to place your content in box for better presentation. In such situation the Bootstrap panel component can be very useful. In most basic form the panel component applies some border and padding around the content.
+
+<div class="panel panel-default">
+    <div class="panel-body">Look, I'm in a panel!</div>
+</div>
+
+Images:
+*******
+Images are very common in modern web design. So styling images and placing it properly on the web pages is very important for improving the user experience.
+Using the Bootstrap built-in classes you can easily style images such as making the round cornered or circular images, or give them effect like thumbnails.
+
+ <img src="http://pnge.org/wp-content/uploads/2016/11/1480490344_93_pictures-of-flowers.jpg" class="img-responsive img-circle">
