@@ -1,0 +1,73 @@
+ 1) what are the data types in java script?
+
+ JavaScript provides different data types to hold different types of values.
+ JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. 
+
+
+Java script can handle different types of datatypes:
+String	    represents sequence of characters e.g. "hello"
+Number	    represents numeric values e.g. 100
+Boolean	    represents boolean value either false or true
+Undefined	represents undefined value
+Null	    represents null i.e. no value at all
+Object      represents instance through which we can access   members
+Array	    represents group of similar values
+
+We need to use "var" here to specify the data type. 
+
+Example:
+********
+var a=40;     //holding number  
+var b="Divya";//holding string 
+var=keyword
+a=name of the variable and then initialization by a value
+
+ 2) what are the diff between java and javascript espically in terms of variables? 
+
+ To Declare a variable in javascript we need to declare it with a keyword called "var" as shown in the above example,unlike in java or c++ we literally declare the datatype using the datatype name as shown below
+ In Java:
+ ********
+ int a = 10;
+ String b="Divya";
+
+ 3) why do we use javascript in web pages?
+ Javascript is all over the web ,as it programs the the behavior of web pages.
+ Javascript is a client-side scripting language.
+ Javascript is a programming language that adds interactivity to your website.
+ for example:responses when buttons are pressed or data entered in forms,games.
+
+ 4) how to include javascript into webpages? where to include java script in webpages and why?
+ They are few different ways of adding javascript into a webpage
+ 1.By the <script> tag in head or body
+ example:
+ ********
+ <head>
+ <script>
+ //By default script language of website is javascript 
+ </script>
+ </head>
+
+                    or
+
+  <body>
+ <script>
+ //By default script language of website is javascript 
+ </script>
+ </body>
+
+ It is always a good practise to put our javascript at the bottom of the body tag ,therefore the rest of the page can load first before the javascript executes.
+
+ 2.By linking a .js file in the head or body.
+ In seperate folder Create a new file  and name it with .js extension and write some script in that file.
+ Now  link that .js file in your index.html using script tag as shown below
+ <script src="scripts/main.js">
+ </script> 
+
+ 3.Inline
+
+ 	It is done by using  "onclick"
+ 	onclick="alert('hi');"
+
+
+
+
