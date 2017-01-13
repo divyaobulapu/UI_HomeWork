@@ -1,0 +1,68 @@
+CSS Display Property?
+
+The CSS specification defines the default display value for all the elements, e.g. the <div> element is rendered as block, while the <span> element is displayed inline.
+
+Overriding the default display value of an element is an important implication of the display property. For example, changing an inline-level element to be displayed as block-level element or changing the block-level element to be displayed as an inline-level element.
+
+Display Block
+*************
+The block value of the display property forces an element to behave like block-level element, like a <div> or <p> element. 
+
+ display:block;
+
+ Display Inline
+ **************
+The inline value of the display property causes an element to behave as though it were an inline-level element, like a <span> or an <a> element. The style rules in the following example displays the <p> and <li> elements as inline-level elements:
+  display: inline;
+
+  Display Inline-Block
+  *********************
+  The inline-block value of the display property causes an element to generate a block box that will be flowed with surrounding content i.e. in the same line as adjacent content. The following style rules displays the <div> and <span> elements as inline-block
+  display:inline-block;
+
+  Display none:
+  *************
+  simply causes an element to generate no boxes at all.Child elements do not generate any boxes either, even if their display property is set to something other than none. 
+  display:none;
+
+ 2) display none and visibility hidden differences in css? when do you use either one of them?
+ 
+ The display and visibility CSS properties appear to be the same thing, but they are in fact quite different.
+
+ visibility: hidden;
+ ********************
+ It actually hides the element, but it still takes up space in the layout. Child element of a hidden box will be visible if their visibility is set to visible.
+
+ display: none
+ **************
+ turns off the display and removes the element completely from the document. It does not take up any space, even though the HTML for it is still in the source code. All child elements also have their display turned off, even if their display property is set to something other than none.
+
+3) css box model? 
+Each and every element in css will have the following boxes
+--content box:This deals with the content inside the box.
+The below three boxes will be outside the box
+--padding box
+--border box
+--margin box
+This is explained in index.html 
+
+4) box sizing in css? 
+The box-sizing property is used to tell the browser what the sizing properties (width and height) should include.Otherwise the box will be in default css model.
+
+example:
+box-sizing: border-box;
+box-sizing: content-box;
+
+5) what SASS? 
+  Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor.Sass makes writing maintainable CSS easier. You can get more done, in less code, more readably, in less time.
+
+  we have to write the code using '$'
+
+  6) what is preprocessor? why do you need to use preprocessor?
+   A preprocessor is a program that takes one type of data and converts it to another type of data.one of the more popular preprocessor in CSS language include Haml and Sass
+  Uses of preprocessor:
+  *********************
+  It adds the stuff that should have been in CSS in the first place.
+  It will save you time.
+  It will make your CSS more organized.
+  It will make your code easier to maintain.
