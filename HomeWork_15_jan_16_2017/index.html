@@ -1,0 +1,196 @@
+ 1) explain with examples about all properties and methods of strings and arrays 
+ 
+ Strings:
+ ********
+ The JavaScript string is an object that represents a sequence of characters.
+
+There are 2 ways to create string in JavaScript
+
+By string literal
+By string object (using new keyword)
+
+1) By string literal:
+***********************
+var stringname="string value";  
+example:
+*********
+<script>  
+var str="This is string literal";  
+document.write(str);  
+</script>  
+
+2) By string object (using new keyword)
+*****************************************
+var stringname=new String("string literal");  
+example:
+********
+<script>  
+var stringname=new String("hello javascript string");  
+document.write(stringname);  
+</script>  
+
+String Methods of JavaScript 
+*****************************
+charAt(index):
+*************
+The JavaScript String charAt() method returns the character at the given index.
+example:
+<script>  
+var str="javascript";  
+document.write(str.charAt(2));  
+</script>  
+
+concat(str)
+************
+The JavaScript String concat(str) method concatenates or joins two strings.
+example:
+********
+<script>  
+var s1="javascript ";  
+var s2="concat example";  
+var s3=s1.concat(s2);  
+document.write(s3);  
+</script>  
+indexOf(str)
+lastIndexOf(str)
+toLowerCase()
+toUpperCase()
+slice(beginIndex, endIndex)
+trim()
+
+
+slice()
+Extracts a section of a string and returns a new string.
+
+split()
+Splits a String object into an array of strings by separating the string into substrings.
+
+substr()
+Returns the characters in a string beginning at the specified location through the specified number of characters.
+
+substring()
+Returns the characters in a string between two indexes into the string.
+
+toLocaleLowerCase()
+The characters within a string are converted to lower case while respecting the current locale.
+
+toLocaleUpperCase()
+The characters within a string are converted to upper case while respecting the current locale.
+
+toLowerCase()
+Returns the calling string value converted to lower case.
+
+toString()
+Returns a string representing the specified object.
+
+toUpperCase()
+Returns the calling string value converted to uppercase.
+
+valueOf()
+Returns the primitive value of the specified object.
+
+
+The String.prototype property represents the String prototype object.
+
+String.prototype.constructor
+Specifies the function that creates an object's prototype.
+String.prototype.length
+Reflects the length of the string.
+
+JavaScript Arrays
+*****************
+syntax to create an Array object −
+
+var fruits = new Array( "apple", "orange", "mango" );
+create array by simply assigning values as follows −
+
+var fruits = [ "apple", "orange", "mango" ];
+
+Array Properties
+****************
+constructor:
+Returns a reference to the array function that created the object.
+
+index:	The property represents the zero-based index of the match in the string
+input:This property is only present in arrays created by regular expression matches.
+length:
+Reflects the number of elements in an array.
+
+prototype:
+The prototype property allows you to add properties and methods to an object.
+
+Array methods:
+***************
+concat()
+
+Returns a new array comprised of this array joined with other array(s) and/or value(s).
+every()
+
+Returns true if every element in this array satisfies the provided testing function.
+filter()
+
+Creates a new array with all of the elements of this array for which the provided filtering function returns true.
+forEach()
+
+Calls a function for each element in the array.
+indexOf()
+
+Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
+join()
+
+Joins all elements of an array into a string.
+lastIndexOf()
+
+Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
+map()
+
+Creates a new array with the results of calling a provided function on every element in this array.
+pop()
+
+Removes the last element from an array and returns that element.
+push()
+
+Adds one or more elements to the end of an array and returns the new length of the array.
+reduce()
+
+Apply a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.
+reduceRight()
+
+Apply a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value.
+reverse()
+
+Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.
+shift()
+
+Removes the first element from an array and returns that element.
+slice()
+
+Extracts a section of an array and returns a new array.
+some()
+
+Returns true if at least one element in this array satisfies the provided testing function.
+toSource()
+
+Represents the source code of an object
+sort()
+
+Sorts the elements of an array
+splice()
+
+Adds and/or removes elements from an array.
+toString()
+
+Returns a string representing the array and its elements.
+unshift()
+
+Adds one or more elements to the front of an array and returns the new length of the array.
+example:
+*********
+ var my_array = ["a","b","c","k","d"];
+        var start_index = 3
+        var number_of_elements_to_remove = 1;
+        var removed_elements = my_array.splice(start_index, number_of_elements_to_remove);
+        console.log(removed_elements);
+        //["k"]
+        console.log(my_array);
+        //["a","b","c","d"];
