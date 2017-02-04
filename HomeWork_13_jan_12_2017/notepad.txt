@@ -1,0 +1,176 @@
+1) operational precendece? 
+Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
+This tells the compiler to pick which one aver the other .
+
+Now,lets know which operator will compiler pick first.
+1.Brackets
+2.Exponents
+3.Multiplication
+4.Division
+5.Addition
+6.Subtraction
+
+example:(50+200)*3
+Now javascript will call the value in the brackets first
+(which has higher precedence) and then its result is multiplied.
+
+
+Truthy  Values:
+***************
+Truthy value:is a value that translates to true when evaluated to Boolean context.
+Examples of Truthy Values:
+***************************
+if(true)
+if({})
+if([])
+if(42)
+if("string")
+if(new Date())
+Conditionals lets control the flow of the program
+
+Falsy  Values:
+****************
+Falsy Value is a value that translates to false when evaluated in boolean context.
+Examples of Falsy Values:
+**************************
+if(false)
+if(null)
+if(undefined)
+if(0)
+if(NaN)
+if("")
+if(document.all)
+
+ logical and(&&), logical or(||)?
+ **********************************
+
+ Logical AND ( && )
+ ********************
+
+ It is used as a && b :is true if both a and b are true.
+
+ The following conditions are true :
+
+true && true =true
+(20 > 5) && (5 < 20)
+
+The following conditions are false :
+
+true && false =false
+false && true =false
+false && false=false
+
+ Logical OR( || )
+ ********************
+ It is used as a || b :	is true if either a or b is true.
+
+ The following conditions are true :
+
+true || true = true
+
+true || false= true
+
+false || true= true
+
+The following conditions are false :
+
+false || false =false
+
+ Conditions in javascript:
+ ************************
+  Conditional statements are the set of commands used to perform different actions based on different conditions. JavaScript supports two conditional statements: 
+  1)if...else.
+  2)switch. 
+
+If ... Else Statement:
+**********************
+The If Statement is a way to make decisions.
+if (condition) {
+   statements_1
+} else {
+   statements_2
+}
+
+___________________________________
+if (condition_1)
+   statement_1
+[else if (condition_2)
+   statement_2]
+...
+[else if (condition_n_1)
+   statement_n_1]
+[else
+   statement_n]
+
+   Switch Statement:
+   *******************
+
+Switch statements work the same as if statements. However the difference is that they can check for multiple values. Of course you do the same with multiple if..else statements, but that really doesn’t look good.
+
+switch (expression) {
+   case label_1:
+      statements_1
+      [break;]
+   case label_2:
+      statements_2
+      [break;]
+   ...
+   default:
+     statements_n
+     [break;]
+}
+
+5) (post and pre) increment and (post and pre) decrement?
+
+++i (Pre increment): It will increment the value of i even before assigning it to the variable i.
+
+i++ (Post-increment): The operator will return the variable value first (i.e, i value) then only i value is incremented by 1.
+–i (Pre decrement): It will decrement the value of i even before assigning it to the variable i.
+i– (Post decrement): The operator will return the variable value first (i.e, i value) then only i value is decrements by 1.
+
+
+Pre-increment:
+1) Let's say you want to buy a very expensive apple for $2
+2) Your mam gives you $1
+3) You ask your dad and he decides to give you $1 dollar too
+4) You buy the apple
+5) Total money received: $2
+
+Post-incement:
+1) You want the same apple for $2
+2) Mam gives you $1
+3) You ask dad, but dad will only give you a dollar when you bring something back for him from the shop
+4) You go to the shop but can't buy the apple, and bring something back for your dad
+5) Total money received: $2
+
+
+loops:
+*******
+For loop:
+***********
+The For Loop
+
+The For loop is executed till a specified condition returns false. It has basically the same syntax then in other languages. It takes 3 arguments and looks as follows: 
+
+for (initialization; condition; increment) 
+{            
+   // statements
+}
+When the For loop executes, the following occurs:
+
+The initializing expression is executed. This expression usually initializes one or more loop counters, but the syntax allows an expression of any degree of complexity.
+The condition expression is evaluated. If the value of condition is true, the loop statements execute. If the value of condition is false, the for loop terminates.
+The update expression increment executes.
+The statements execute, and control returns to step 2.
+
+The While Loop:
+****************
+
+The While loop is another commonly used loop after the For loop. The while statement repeats a loop as long as a specified condition evaluates to true. If the condition becomes false, the statements within the loop stop executing and control passes to the statement following the loop. The while statement looks as follows:
+
+
+while (condition) 
+{
+  // statements
+}
+
