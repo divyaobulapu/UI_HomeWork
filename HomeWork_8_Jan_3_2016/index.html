@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Classes & Pseudo Elements</title>
+
+<style>
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: orange;
+}
+a:active {
+    color: rebeccapurple;
+}
+a:focus {
+    color: green;
+}
+p:default {
+    padding: 5px 35px;
+    color: white;
+    background: $g;
+}
+</style>
+</head>
+<body>
+
+<p><a href="https://www.google.com" >google</a></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+</body>
+</html>

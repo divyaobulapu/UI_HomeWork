@@ -1,0 +1,184 @@
+1) what are pseudo classes in css? 
+
+A pseudo-class is a specific characteristic of an element that can be targeted with CSS.
+pseudo-classes are always preceded by a colon ":". Then comes the name of the pseudo-class and sometimes a value in parentheses.
+
+The syntax of pseudo-classes:
+
+selector:pseudo-class {
+    property:value;
+}
+
+The most commonly used pseudo-classes are  −
+
+:link --> This selects any element whose target has not been visited.
+
+:visited--> This selects any  element whose target has been visited.
+
+:hover --> This selects any element which is in a hover state. This is a state during pointer movement within the rendering region of an element. The user designates an element but does not activate it.
+
+:focus-->This selects any  element which currently has focus. Focus is a state during which an element accepts keyboard input or other forms of text input. 
+
+:active--> This selects any element which is in a state of activation. Active is a state during pointer activation (eg: press and release of a mouse) within the rendering region of an element.
+
+:FIRST-CHILD 
+The :first-child pseudo-class represents the first child of its parent element.
+
+:LAST-CHILD 
+The :last-child pseudo-class represents the last child element in its parent container.
+
+:LAST-OF-TYPE
+The :last-of-type pseudo-class represents the last element of its kind in its parent container.
+
+:Default
+The :default pseudo-class targets the default element in a
+form among a group of similar elements.
+
+
+:NTH-CHILD 
+The :nth-child pseudo-class targets one or more elements depending on their order in the markup.
+
+example:
+<ol>
+    <li>Alpha</li>
+    <li>Beta</li>
+    <li>Gamma</li>
+    <li>Delta</li>
+    <li>Epsilon</li>
+    <li>Zeta</li>
+    <li>Eta</li>
+    <li>Theta</li>
+    <li>Iota</li>
+    <li>Kappa</li>
+</ol>
+
+Let’s select the second child. So, only “Beta” will be orange:
+ol :nth-child(2) {
+    color: orange;
+}
+Now, let’s select every other child starting from the second. So, “Beta,” “Delta,” “Zeta,” “Theta” and “Kappa” will be orange:
+ol :nth-child(2n) {
+    color: orange;
+}
+Let’s select all even-numbered children:
+ol :nth-child(even) {
+    color: orange;
+}
+Let’s select every other child, starting from the sixth. So, “Zeta,” “Theta” and “Kappa” will be orange:
+ol :nth-child(2n+6) {
+    color: orange;
+}
+:CHECKED 
+The :checked pseudo-class targets radio buttons, checkboxes and option elements that have been checked or selected.
+
+:DISABLED
+The :disabled pseudo-class targets a form element in the disabled state. An element in a disabled state can’t be selected, checked or activated or gain focus.
+
+:EMPTY 
+The :empty pseudo-class targets elements that have no content in them of any kind at all. If an element has a letter, another HTML element or even a space, then that element would not be empty.
+
+:ENABLED 
+The :enabled pseudo-class targets elements that are enabled. All form elements are enabled by default — that is, until we add the disabled attribute to the element in the markup.
+
+:FIRST-OF-TYPE 
+The :first-of-type pseudo-class represents the first element of its kind in its parent container.
+
+:INVALID LINK
+The :invalid pseudo-class targets a form element whose formatting is not correct according to that element’s required format.
+
+:VALID 
+The :valid pseudo-class targets a form element whose formatting is correct according to that element’s required format.
+
+:ROOT 
+The :root pseudo-class refers to the highest parent element in a document.
+
+:ONLY-CHILD
+
+The :only-child pseudo-class targets the only child of a parent element.
+
+:OPTIONAL
+The :optional pseudo-class targets input fields that are not required in a form. In other words, as long as an input doesn’t have the required attribute, it can be targeted with the :optional pseudo-class.
+
+:OUT-OF-RANGE 
+The :out-of-range pseudo-class targets elements that have a range and whose values fall outside of the defined range.
+
+:ONLY-OF-TYPE
+The :only-of-type pseudo-class targets an element that has no siblings of that particular type. This is similar to :only-child except that we can target a specific element and make the selector more meaningful.
+
+:READ-ONLY 
+The :read-only pseudo-class targets an element that cannot be edited by the user. It’s similar to the :disabled pseudo-class; the attribute used in the markup would determine which pseudo-class we should use.
+
+:READ-WRITE 
+The :read-write pseudo-class targets elements that can be edited by the user. It can work on elements that have the contenteditable HTML attribute as well.
+This pseudo-class can be combined with the :focus pseudo-class to enhance the UX in certain situations.
+
+:NTH-OF-TYPE 
+The :nth-of-type pseudo-class works basically the same as :nth-child, the main difference being that it’s more specific because we’re targeting a specific element relative to like elements contained within the same parent element.
+
+:NOT 
+The :not pseudo-class is also known as the negation pseudo-class. It accepts an argument — basically, another “selector” — inside parentheses. The argument can actually be another pseudo-class.
+
+:TARGET 
+The :target pseudo-class… well, targets the unique ID of an element and the hash in the URL.
+
+:REQUIRED 
+The :required pseudo-class targets input elements that have the required HTML attribute.
+
+:LANG 
+The :lang pseudo-class matches the language of an element as determined by a combination of the lang="" HTML attribute, the corresponding meta element and information gleaned from the protocol, such as an HTTP header.
+The lang="" HTML attribute is commonly used in the html tag, but it can also be used in any other tag if needed.
+
+:IN-RANGE
+The :in-range pseudo-class targets elements that have a range and whose values are within the defined range.
+
+:NTH-LAST-CHILD
+The :nth-last-child pseudo-class basically works the same as :nth-child except that it selects elements starting from the end, rather than the beginning.
+
+:NTH-LAST-OF-TYPE 
+The :nth-last-of-type pseudo-class works the same as :nth-of-type, the difference being that it starts counting from the end of the list, rather than the beginning.
+
+
+Pseudo-elements
+
+PSEUDO-ELEMENTS are used to address sub-parts of elements. They allow you to set style on a part of an element's content beyond what is specified in the documents. 
+
+::before
+::after
+::first-letter
+::first-line
+
+
+::AFTER/:AFTER
+The :after pseudo-element is used to add content (either text or a shape) to another HTML element. This content is not actually present in the DOM, but it can be manipulated as if it were. In order for it to work, the content property needs to be declared in the CSS.
+
+::BEFORE/:BEFORE 
+
+The :before pseudo-element, like its sibling :after, adds content (text or a shape) to another HTML element. Again, this content is not actually present in the DOM but can be manipulated as if it were. And the content property needs to be declared in the CSS.
+
+::FIRST-LETTER/:FIRST-LETTER LINK
+
+The :first-letter pseudo-element selects the first letter in a line of text.
+
+::FIRST-LINE/:FIRST-LINE LINK
+
+The :first-line pseudo-element targets the first line of an element. It works only on block-level elements, not inline elements.
+
+Difference between Pseudo-elements and Pseudo Classes
+*******************************************************
+
+Pseudo-classes are used to select elements according to information that you can't otherwise express using attributes, IDs or classes (or any other info available through the DOM). For example, :root, :first-child, :last-child, :lang() and :not().
+
+Pseudo-elements are mock elements that you can apply styles to selectively as part of other actual elements, but aren't themselves members of the DOM. For example, content fragments such as ::first-line and ::first-letter, or generated content such as ::before and ::after.
+
+"Pseudo-selectors" is an umbrella term used to cover both kinds of selectors (or really any selector that begins with at least one :), but it is itself meaningless, because in Selectors, pseudo-classes and pseudo-elements are two fundamentally different things.
+
+5) what are media queries in css and how can you use them ? 
+What are Media Queries?
+Media queries allow us to crete CSS rules based on various parameters(viewport size,device type etc)
+We can arrange our layout to suit a wide variety of different device/screen sizes
+
+For example we can create a media query which targets just  mobile screen sizes
+
+Responsive Web design :
+**************************
+Responsive Web design is the approach that suggests that design and development should respond to the user’s behavior and environment based on screen size, platform and orientation. The practice consists of a mix of flexible grids and layouts, images and an intelligent use of CSS media queries. As the user switches from their laptop to iPad, the website should automatically switch to accommodate for resolution, image size and scripting abilities. 
