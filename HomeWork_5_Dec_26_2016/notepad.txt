@@ -1,0 +1,135 @@
+1) explain all input types with examples
+The HTML <input> tag is used within a form to declare an input element - a control that allows the user to input data.
+	The keyword used to define a form is "Form"
+	we are creating simplest input form type
+	Inputs can be several different types 
+
+	1.text input--If we want to give the Text input to a webpage.
+example:
+    <input type="text"/>
+	<input type="text" value="email"/>
+	<input type="text" placrholder="type here.."/>
+
+	2.email input   --To give email as a input 
+example:
+    <input type="email" placrholder="type here.."/>
+
+	3.textarea --To type large areas of text
+example:
+    <textarea>write a comment</textarea>
+
+	4.Submit button--Submit button is used to submit an application
+example:
+	<input type="submit" value="Click Me!">
+
+	5.Check box --To make a selection from Multiple options
+example:
+	<input type="checkbox" />Dog
+	<input type="checkbox" />Cat
+	<input type="checkbox" />Fish
+
+	6.Radio button--To select between two options
+example:
+    <input type="radio" name="color"/>Red
+	<input type="radio" name="color"/>Green
+While using radio button if we use "name" we can switch between two options 
+
+    7.Drop Down Box--This is one kind of input types.which is created using "Select" keyword
+example:
+    <select>
+	<option> Select an Option..</option>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	</select>
+	
+2) explain all the input attributes?
+
+ HTML tags can also have attributes, which are extra bits of information.
+
+An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts: a name and a value:
+Attribute names and attribute values are case-insensitive.
+
+Core Attributes:
+****************
+id
+title
+class
+style
+
+id Attribute:
+*************
+The id attribute  can be used to uniquely identify any element within an HTML page. 
+-Two elements can't have the same id name.
+If we have two elements of the same name within a Web page  we can use the id attribute to distinguish between elements.
+
+example:
+*******
+<h1 id="html">This para explains what is HTML</p>
+<h1 id="css">This para explains what is Cascading Style Sheet</p>
+title Attribute:
+*****************
+The title attribute gives a suggested title for the element. They syntax for the title attribute is similar as explained for id attribute.
+
+example:
+********
+<!DOCTYPE html>
+<html>
+<head>
+<title>The title Attribute Example</title>
+</head>
+<body>
+<h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+</body>
+</html>
+
+
+The class Attribute:
+********************
+The class attribute is used to associate an element with a style sheet, and specifies the class of element.
+
+example:
+*******
+class="className1 className2 className3"
+
+The style Attribute:
+********************
+The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element.
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>The style Attribute</title>
+</head>
+<body>
+<p style="font-family:arial; color:#FF0000;">Some text...</p>
+</body>
+</html>
+
+what are semantic elements ?
+A semantic element clearly describes its meaning to both the browser and the developer.
+ Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+  Difference  between article, section, div?
+  Section:
+The section tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+
+Article:
+The article tag specifies independent, self-contained content.
+
+An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+
+div:
+The <div> tag defines a division or a section in an HTML document.
+
+The <div> tag is used to group block-elements to format them with CSS.
+
+Differences between html4 and html5?
+HTML5 has several goals which differentiate it from HTML4.
+1.Better Web Application Features.
+2.Improved Element Semantics
+
+what are from and what is form validation in html?
+This module is to validate HTML forms. Text fields, emails, phones, checkobxes etc.
+The simplest change you can make to your forms is to mark a text input field as 'required':
+Your Name: <input type="text" name="name" required>
