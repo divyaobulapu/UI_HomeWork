@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+First number    :
+<input type="text" name="firstnumber" id="firstnumber"></br>
+</br>
+Second number:
+<input type="text" name="secondnumber" id="secondnumber">
+</br>
+<br>
+</br>
+Result:
+<input type="textbox" name="result" id="result">
+<br>
+<br>
+<button onclick="addnumbers()">Add</button>
+
+<script type="text/javascript">
+function addnumbers(){
+	var first=(document.getElementById("firstnumber").value);
+	if (first ==""){
+		alert("First box should not be empty");
+		return;
+	}
+	first = parseFloat(first);
+	if (isNaN(first)){
+		alert("First should be a number");
+		return;
+	}
+	var second=(document.getElementById("secondnumber").value);
+	if (second==""){
+		alert("Second box should not be empty");
+		return;
+	}
+	second= parseFloat(second);
+	if (isNaN(second)){
+		alert("Second should be a number");
+		return;
+	}
+	document.getElementById("result").value=(first+second) ;
+}
+  
+</script>
+</body>
+</html>

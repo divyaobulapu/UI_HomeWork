@@ -1,0 +1,25 @@
+<!--Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.-->
+<!-- https://gist.github.com/lostaunaum/4e2821a34dfa0b8d3a41-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+for (var year = 2000; year <= 2050; year++)
+    {
+    var day = new Date(year, 0, 1);
+    if ( day.getDay() === 0 )
+      document.write("1st January of this year is Sunday : "+ year + "</br>");
+    }
+		
+
+</script>
+
+
+</body>
+</html>
+

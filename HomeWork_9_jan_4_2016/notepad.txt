@@ -1,0 +1,37 @@
+What are Media Queries?
+Media queries allow us to crete CSS rules based on various parameters(viewport size,device type etc)
+We can arrange our layout to suit a wide variety of different device/screen sizes
+
+For example we can create a media query which targets just  mobile screen sizes
+
+"Responsive Design" is the strategy of making a site that "responds" to the browser and device that it is being shown on... by looking awesome no matter what.
+
+Media queries are the most powerful tool for doing this. 
+
+Syntax:
+@media<media-type> and(expressions){}
+
+Example
+@media TV and(min-width:1200px){}
+@media screen and(max-width:800px){}
+
+min-width/max-width:
+The ‘width’ media feature describes the width of the targeted display area of the output device.
+
+@media (max-width:450px){
+	background:red;
+}
+@media (min-width:451px)and (max-width:450px){
+	background:blue;
+	}
+
+They are three types of Media 
+--print attempting to print pages 
+--screen when seeing it in a browser or device
+--speech when yoy activate screen readers 
+all aural braille handheld print projection 
+
+
+mobile:320px-480px
+480px-768px
+tabs:768-9942

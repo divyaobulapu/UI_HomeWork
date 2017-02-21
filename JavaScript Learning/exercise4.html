@@ -1,0 +1,32 @@
+<!--Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>A method for calculating the area of a triangle when you know the lengths of all three sides.</p>
+
+<p>Let a,b,c be the lengths of the sides of a triangle. The area is given by:</p>
+<p>Area	=	 squareroot of	 p*(p−a)*(p-b)*(p−c)   </p> 
+where p is half the perimeter, or   
+(a	+	b	+	c )/2
+   </br><br>
+
+Half of the perimeter of triangle i.e., (a+b+c)/2  : <span id="per"></span>
+</br> </br>
+Area of the triangle squareroot of	 p*(p−a)*(p-b)*(p−c) : 
+<span id="area"></span>
+<script type="text/javascript">
+	var a=5;
+	var b=6;
+	var c=7;
+	var p=(a+b+c)/2;
+	var e=Math.sqrt(p*((p-a)*(p-b)*(p-c)));
+	document.getElementById("per").innerHTML=p;
+	document.getElementById("area").innerHTML=e;
+</script>
+</body>
+</html>

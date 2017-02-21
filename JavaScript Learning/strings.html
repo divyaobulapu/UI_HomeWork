@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+Email Address   :
+<input type="text" name="email" id="email"></br>
+</br>
+Email part:
+<input type="text" name="epart" id="epart">
+</br>
+<br>
+</br>
+Domain Part:
+<input type="text" name="Domain" id="Domain">
+<br>
+<br>
+<button onclick="seperateparts()">Click to get email & domain Parts</button>
+
+
+<script type="text/javascript">
+function seperateparts(){
+	var getemail=document.getElementById("email").value;
+	var emailaddress=getemail.substring(0,getemail.indexOf("@"));
+	var domainpart=getemail.substring(getemail.indexOf("@")+1);
+	document.getElementById("epart").value=emailaddress;
+	document.getElementById("Domain").value=domainpart;
+
+} 
+</script>
+</body>
+</html>
+

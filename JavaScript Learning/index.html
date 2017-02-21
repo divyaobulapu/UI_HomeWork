@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+First number    :
+<input type="textbox" name="firstnumber" id="firstnumber"></br>
+</br>
+Second number:
+<input type="textbox" name="secondnumber" id="secondnumber">
+</br>
+<br>
+</br>
+<button onclick="addnumbers()">Add</button>
+<p id="demo"></p>
+<script type="text/javascript">
+function addnumbers(){
+	var first=parseInt(document.getElementById("firstnumber").value);
+	var second=parseInt(document.getElementById("secondnumber").value);
+	var x=first+second;
+	alert(document.getElementById("demo").innerHTML=x) ;
+}
+  
+</script>
+</body>
+</html>

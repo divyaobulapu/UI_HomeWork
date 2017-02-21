@@ -1,0 +1,58 @@
+<!--Write a JavaScript program to display the current day and time in the following format-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+Today is   :  <span id="txt"></span>
+<br>
+Current Time :   <span id="time"></span>
+
+	
+
+
+<script type="text/javascript">
+	var weekday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	var today = new Date();
+	var currentDay=weekday[today.getDay()];
+	var hours = today.getHours();
+	var minutes = today.getMinutes();
+	var seconds = today.getSeconds();
+	var ext='';
+
+	if(hours < 12){
+		
+		ext = 'AM';
+	}else{
+		if(hours != 12){
+			hours = hours-12;
+		}
+		ext = ' PM';
+	}
+	if(hours < 10){
+			hours = '0'+hours;
+		}
+
+	// if(hours > 12){
+	// 	hours = hours-12;
+	// 	ext=' PM';
+	// }
+	//  else if(hours == 12){
+ //        hours="12";
+ //        ext=' PM';
+	// }
+	
+ //    else{
+	// 	ext=' AM';
+	// }
+
+
+
+	document.getElementById("txt").innerHTML=currentDay;
+	document.getElementById("time").innerHTML=hours+ext+':'
+	+minutes +':'+seconds;
+
+</script>
+</body>
+</html>
